@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>MH Hamim parsonal wabsite </title>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+    <style>
+        body {
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Lato", serif !important;
+        }
+
+        p,
+        span,
+        a {
+            font-family: "Raleway", sans-serif !important;
+        }
+
+        .button {
+            padding: 12px;
+            border: 2px solid;
+            border-radius: 3px;
+            text-transform: uppercase;
+            -webkit-transition: all .3s;
+            transition: all .3s;
+            font-size: 16px;
+        }
+
+        /* Scrollbar */
+
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #11ABB0;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #159296;
+        }
+
+
+
+
+        @media (max-width: 576px) {
+
+            #header {
+                background-size: initial !important;
+                background-position: top !important;
+            }
+
+            #header h1 {
+                font-size: 40px !important;
+            }
+
+            #header h4 {
+                font-size: 16px !important;
+            }
+
+            #portfolio h2 {
+                font-size: 25px !important;
+            }
+        }
+
+
+
+
+        /* H E A D E R */
+
+
+        #header {
+            min-height: 100vh;
+            background-image: url(m.jpg);
+            background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -webkit-background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .menu-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .09);
+            z-index: 1;
+        }
+
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            z-index: 1;
+        }
+
+
+        .nav-content {
+            position: relative;
+            display: none;
+            padding: 0;
+            background: rgba(0, 0, 0, .8);
+        }
+
+        .nav-content>li {
+            list-style: none;
+            padding: 5px 20px;
+        }
+
+        .nav-content>li>a {
+            display: block;
+            text-decoration: none;
+            line-height: 32px;
+            color: #F5F5F5;
+            -webkit-transition: .3s;
+            transition: .3s;
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding: 0 !important;
+        }
+
+        .nav-content>li>a:hover,
+        .active {
+            color: #11ABB0 !important;
+        }
+
+        .toggler {
+            padding: 10px 15px;
+            background: rgba(0, 0, 0, .8);
+            display: block;
+            cursor: pointer;
+            width: min-content;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: -ms-min-content;
+            width: -o-min-content;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 25px;
+            height: 3px;
+            background-color: #F5F5F5;
+            margin: 6px 0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-5px, 5px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+
+        .nav-content #dropdown-menu {
+            display: none;
+            background: rgba(0, 0, 0, .8);
+            position: absolute;
+            top: 0;
+            left: 100%;
+            border-left: 1px solid rgba(0, 0, 0, .3);
+            padding: 10px 0;
+        }
+
+        .nav-content #dropdown-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-content #dropdown-menu ul li a {
+            color: #F5F5F5;
+        }
+
+        #dropdown {
+            position: relative;
+        }
+
+        #header .dropdown-item:hover,
+        #header .dropdown-item.active {
+            color: #11ABB0;
+            background: transparent !important;
+        }
+
+
+        #header>.row {
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        #header h1 {
+            font-size: 80px;
+            color: #F5F5F5;
+        }
+
+        #header hr {
+            width: 200px;
+            border-color: #F5F5F5;
+        }
+
+        #header h4 {
+            font-size: 20px;
+            font-weight: normal;
+            color: #F5F5F5;
+        }
+
+
+
+
+
+        /* A B O U T */
+
+
+
+
+
+        #about {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background: #2B2B2B;
+        }
+
+        #about h2 {
+            margin-bottom: 30px;
+            color: #F5F5F5;
+        }
+
+        #about p {
+            color: #999;
+        }
+
+        #about img {
+            width: 200px;
+        }
+
+        @media (max-width: 992px) {
+            .picture {
+                display: none;
+            }
+        }
+
+
+        /* C V */
+
+
+
+        #cv {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            background: #F7F7F7;
+        }
+
+        #cv hr {
+            height: 1px;
+            border: none;
+            background: #DDD;
+            margin: 50px auto;
+        }
+
+        #cv .row h3 {
+            border-bottom: 3px solid #11ABB0;
+            font-size: 24px;
+            padding-bottom: 5px;
+            width: min-content;
+            width: -webkit-min-content;
+            width: -moz-min-content;
+            width: -ms-min-content;
+            width: -o-min-content;
+            margin-bottom: 50px;
+        }
+
+        #cv .row {
+            margin-bottom: 80px;
+        }
+
+        .skills+.skills {
+            margin-top: 60px;
+
+        }
+
+        .skills>h4 {
+            color: #11ABB0;
+            margin-bottom: 40px;
+        }
+
+        #cv .skill-item+.skill-item {
+            margin-top: 30px;
+        }
+
+        #cv .skill-item>h4 {
+            font-size: 16px;
+            color: #222;
+        }
+
+        #cv .skill-item>.progress {
+            height: 40px;
+            background: #DDD;
+        }
+
+        #cv .skill-item .progress-bar {
+            background: #222;
+        }
+
+        .exp+.exp {
+            margin-top: 60px;
+
+        }
+
+        .exp>h4 {
+            color: #11ABB0;
+            margin-bottom: 40px;
+        }
+
+        #cv .box+.box {
+            margin-top: 50px;
+        }
+
+        #cv .box h4 {
+            font-size: 20px;
+            color: #222;
+        }
+
+        #cv .box h6 {
+            color: #11ABB0;
+        }
+
+        #cv .box p {
+            color: #888;
+        }
+
+
+
+
+        /* P O R T F O L I O */
+
+
+        #portfolio {
+            padding: 80px 0;
+            background: #EBEEEE;
+        }
+
+
+        #portfolio h2 {
+            padding: 0;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #666;
+        }
+
+        #portfolio img {
+            max-width: 100%;
+        }
+
+        #portfolio .row>div {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+
+
+        #portfolio .row div .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: calc(100% - 30px);
+            transform: scale(0);
+            margin: auto;
+            opacity: 0;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            background: rgba(0, 0, 0, .55);
+            border-radius: 20%;
+        }
+
+        #portfolio .row div:hover .overlay {
+            opacity: 1;
+            transform: scale(1);
+            height: 100%;
+            border-radius: 0;
+        }
+
+        #portfolio .row div .overlay h3 {
+            color: #f7f7f7;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+            -ms-transform: translate(-50%, -200%);
+            letter-spacing: .05em;
+        }
+
+        .overlay h3.project-title {
+            -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+            -ms-transform: translate(-50%, -50%) !important;
+        }
+
+
+
+
+
+
+    
+
+#team{
+    padding:105px 0px;
+    
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color:white;
+}
+    
+     
+        
+#team .media{
+    margin-bottom:70px;
+}
+#team .media .media-left img{
+    border-radius:50%;
+}
+#team .media .media-body{
+    padding-left:45px;
+}
+#team .media .media-body p{
+    font-family:TitilliumWeb-Italic;
+    font-size:21px;
+}
+#team .media .media-body .media-heading{
+    font-family:TitilliumWeb-Bold;;
+    font-size:24px;
+}
+#team .media .media-body .media-subheading{
+    font-family:TitilliumWeb-Reguler;;
+    font-size:18px;
+    color:#FFDD99;
+}
+
+ #team img {
+            width: 280px;
+        }
+        
+   
+        
+       
+        #my {
+            padding: 80px 0;
+            background: #EBEEEE;
+        }
+
+
+        #my h2 {
+            padding: 0;
+            margin: auto;
+            margin-bottom: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 30px;
+            color: #666;
+        }
+
+        #my img {
+            max-width: 100%;
+        }
+
+        #my .row>div {
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+
+
+        #my .row div .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: calc(100% - 30px);
+            transform: scale(0);
+            margin: auto;
+            opacity: 0;
+            -webkit-transition: all .5s ease;
+            transition: all .5s ease;
+            background: rgba(0, 0, 0, .55);
+            border-radius: 20%;
+        }
+
+        #my .row div:hover .overlay {
+            opacity: 1;
+            transform: scale(1);
+            height: 100%;
+            border-radius: 0;
+        }
+
+        #my .row div .overlay h3 {
+            color: #f7f7f7;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+            -ms-transform: translate(-50%, -200%);
+            letter-spacing: .05em;
+        }
+
+        .my overlay h3.project-title {
+            -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+            -ms-transform: translate(-50%, -50%) !important;
+        }
+ 
+        
+        
+        
+        /*  C O N T A C T */
+
+
+
+        #contact {
+            background: #191919;
+            color: #F3F3F3;
+            text-align: center;
+            padding: 80px 0 100px 0;
+        }
+
+        #contact div.left>span {
+            font-size: 80px;
+            color: #11ABB0;
+            line-height: 0;
+        }
+
+        #contact h4 {
+            display: inline-block;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #11ABB0;
+            text-align: left;
+            text-transform: uppercase;
+            color: #F5F5F5;
+            font-size: 25px;
+        }
+
+        #form {
+            width: 100%;
+            margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        #form>div {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .firstname,
+        .lastname,
+        .email,
+        .tel {
+            width: 45%;
+        }
+
+        .subject,
+        .msg {
+            width: 100%;
+        }
+
+        .btn-div {
+            min-width: 30%;
+            max-width: 50%;
+            padding: 0;
+        }
+
+        #contact input,
+        textarea {
+            text-align: left;
+            background: transparent !important;
+            border-width: 0 0 1px 0 !important;
+            border-color: #DDD;
+            display: block;
+            width: 100%;
+            padding: 0 12px 6px 0;
+            font-size: 14px;
+            color: #F3F3F3;
+            margin-top: 20px !important;
+            height: 35px;
+            font-family: "Raleway", sans-serif !important;
+        }
+
+        #contact input:focus,
+        #contact textarea:focus {
+            outline: none;
+        }
+
+        .focus-border {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #11ABB0;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+
+        input:focus~.focus-border,
+        textarea:focus~.focus-border {
+            width: 100%;
+        }
+
+        #contact textarea {
+            resize: vertical;
+            overflow-y: auto;
+            min-height: 100px;
+            max-height: 200px;
+        }
+
+        #contact .btn-send {
+            width: 100%;
+            cursor: pointer;
+            margin-top: 20px;
+            background: transparent;
+            border-color: #F3F3F3;
+            color: #F3F3F3;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        #contact .btn-send:hover,
+        #contact .btn-send:focus {
+            color: #333;
+            background: #F3F3F3;
+        }
+
+        #contact .btn-send:focus {
+            outline: none;
+        }
+
+        #contact .btn-send .fa {
+            margin-right: 10px;
+        }
+
+        .label {
+            -webkit-transition: .4s ease all;
+            transition: .4s ease all;
+            position: absolute;
+            top: 25px !important;
+            color: #AAA;
+            text-align: left;
+            font-size: 16px;
+            display: block;
+            cursor: text;
+            font-family: "Raleway", sans-serif;
+        }
+
+        input:focus~.label,
+        textarea:focus~.label[for=message],
+        input.has-value~.label,
+        textarea.has-value~.label[for=message] {
+            font-size: 12px !important;
+            top: 0px !important;
+            color: #11ABB0 !important;
+        }
+
+
+        .input-info {
+            width: 100%;
+            color: #11ABB0;
+            text-align: left;
+        }
+
+        @media (max-width: 768px) {
+
+            #contact .left {
+                display: none;
+            }
+
+            #contact .row {
+                margin: auto;
+                width: 90%;
+            }
+
+            #form {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+
+            .firstname,
+            .lastname,
+            .email,
+            .tel,
+            .btn-div {
+                width: 100%;
+            }
+
+        }
+
+
+
+
+
+
+        /*  F O O T E R  */
+
+        footer {
+
+            background-image: linear-gradient(to right top,  #000000, #1a0000,  #330000);
+            position: relative;
+            padding: 80px;
+        }
+
+      
+.footer-content{
+    text-align: center;
+    max-width: 85%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.footer-content p{
+    color:#ffffff ;
+}
+
+.footer-content a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #565656;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.footer-content a:hover{
+    color: #FFF;
+}
+
+.footer-content a + a{
+    margin-left: 30px;
+}
+
+footer h4{
+    color: #DDD;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px){
+	footer{
+        padding: 80px 0;
+    }
+
+    .footer-content{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .footer-content > div{
+        width: 100% !important;
+        margin-bottom: 45px;
+    }
+
+    .footer-content h4{
+        margin-bottom: 20px;
+    }
+
+    .footer-content a + a{
+        margin-left: 18px;
+    }
+}
+
+    </style>
+    <script>
+        window.console = window.console || function(t) {};
+
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+
+    </script>
+
+
+
+   
+</head>
+
+<body translate="no" id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+
+    <title>Personal website template</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap.min.css" type="text/css">
+    <link href="./css(1)" rel="stylesheet" type="text/css">
+    <link href="./css(2)" rel="stylesheet" type="text/css">
+
+
+    <div id="header" class="container-fluid d-flex">
+        <div class="menu-overlay" style="display: none;"></div>
+        <div class="menu">
+            <div class="toggler">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul class="nav-content" id="navigation" style="display: none;">
+                <li><a class="nav-link active" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#header">Home</a></li>
+                <li><a class="nav-link" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#about">About</a></li>
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#" id="navbardrop">CV</a>
+                    <div id="dropdown-menu" style="display: block;">
+                        <ul>
+                            <li><a class="dropdown-item" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#cv">Skills</a></li>
+                            <li><a class="dropdown-item" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#experience">Experience</a></li>
+                            <li><a class="dropdown-item" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#education">Education</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="nav-link" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#portfolio">Photo Gallary</a></li>
+                
+                                <li><a class="nav-link" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#team">Team</a></li>
+                
+                                
+                <li><a class="nav-link" href="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="row align-items-center justify-content-center text-center">
+            <div>
+                <h1>WELCOME MY WABSITE</h1>
+                <hr>
+                <h4>MH HAMIM</h4>
+            </div>
+        </div>
+    </div>
+    <div id="about" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12 picture">
+                    <img src="./p.JPG" class="rounded-circle" alt="picture">
+                </div>
+                <div class="col-md-9 col-sm-12 offset-md-1">
+                    <h2>About</h2>
+                    <p>My name is MH Hamim. i am proggramer. i like this work.i am came from Amtoli. My home town is Barguna.</p>
+                    <br>
+                    <p> We are the new kids on the block <br /> and we build awesome websites and mobile apps.</p>
+                    <br>
+                    <p>“I’m looking for the unexpected.</p>
+                    <p>I’m looking for things I’ve never seen before.” </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="cv">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <h3>Skills</h3>
+                </div>
+                <div class="col-md-9 col-sm-12 offset-md-1">
+                    <div class="skills">
+                        <h4>Programming languages</h4>
+                        <div class="skill-item">
+                            <h4>HTML</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>CSS</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>JS</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:15%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h4>Frameworks</h4>
+                        <div class="skill-item">
+                            <h4>Name</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Name</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>Name</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h4>Languages</h4>
+                        <div class="skill-item">
+                            <h4>Bangla</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:100%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <h4>English</h4>
+                            <div class="progress">
+                                <div class="progress-bar" style="width:55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="experience">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <h3>Experience</h3>
+                </div>
+                <div class="col-md-9 col-sm-12 offset-md-1">
+                    <div class="exp">
+                        <h4>Professional</h4>
+                        <div class="box">
+                            <h4>WWIT</h4>
+                            <h6>Works at Web Designer • 2018</h6>
+                            <p>On Of My Favourite place.</p>
+                        </div>
+                        <div class="box">
+                            <h4>Presanter</h4>
+                            <h6>Krishi Radio 98.8 • 14 March 2018</h6>
+                            <p>i like this passion and i love it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="education">
+            <div class="row">
+                <div class="col-md-2 col-sm-12">
+                    <h3>Education</h3>
+                </div>
+                <div class="col-md-9 col-sm-12 offset-md-1">
+                    <div class="box">
+                        <h4>SSC</h4>
+                        <h6>Amtali Govt A/K High School  • 2018</h6>
+                        <p>On of my best memorable days of my life</p>
+                    </div>
+                    <div class="box">
+                        <h4>HSC</h4>
+                        <h6>Amtoli Govt Collage • 2020</h6>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+      
+            </div>
+            </div>    
+       
+    <div class="container-fluid" id="portfolio">
+        <h2>Photo Gallary</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./13.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">13 February 2018</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./11.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Friends</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./14.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">13 February 2018</h3>
+                        
+                    </div>
+                </div>
+                
+                
+              <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./n.JPG">
+                    <div class="overlay">
+                        <h3 class="project-title">Celebration Birthday Of|<br>Rohan Islam Noman</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./fun.JPG">
+                    <div class="overlay">
+                        <h3 class="project-title">Fun Time</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./b%20(2).jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Moment Of Kuakata<br>with<br>cute Angel</h3>
+                        
+                    </div>
+                </div>
+                
+                
+                 <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./vi.JPG">
+                    <div class="overlay">
+                        <h3 class="project-title">Kuakata tour with MD Mushfiqur Rahmam</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./di.JPG">
+                    <div class="overlay">
+                        <h3 class="project-title">What a Moment</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./kk2015-01-01-16-21-26.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Memories of Kuakata</h3>
+                        
+                    </div>
+                </div>
+                
+                
+                 <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./b%20(1).jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Birthday Party</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./vo.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Smart Vondo Huzur</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./fi.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">With Faisal Ahmed</h3>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./3e.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">3 Gayzzzzz<br>OLD IS GOLD</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./all.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Kuajata Tour Batch 2018<br>All Friends </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./Up.jpeg">
+                    <div class="overlay">
+                        <h3 class="project-title">MH HAMIM</h3>
+                    </div>
+                </div>
+                     
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./hamim.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Hamim</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./f%202017-07-01-20-35-49.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Me And My Father<br>Eid Of 2016</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./we.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">MH HAMIM</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+ <div id="team">
+            <div class="container">
+                <h1 class="title">TEAM</h1>
+                <div class="line"></div>
+                <p class="title-body">Our clients love us!</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object" src="h2.jpg" alt="Generic placeholder image"/>
+                            </a>
+                            <div class="media-body">
+                               <p><p> 
+                                <h4 class="media-heading">MH Hamim</h4>
+                                <h6 class="media-subheading">Student and Web Programmer.<br>Presanter - Krishi Radio 98.8 FM.
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object" src="22554727_10214327231481833_8902374443786289107_n.jpg" alt="Generic placeholder image"/>
+                            </a>
+                            <div class="media-body">
+                                <p><p>
+                                <h4 class="media-heading">Mushfiquer Rahman</h4>
+                                <h6 class="media-subheading">Executive Director/CEO at WWIT - World Wide Information Technology.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object" src="1917389_922217431230117_6343816053100155500_n.jpg" alt="Generic placeholder image"/>
+                            </a>
+                            <div class="media-body">
+                                <p><p>
+                                <h4 class="media-heading">Faisal Ahmed</h4>
+                                <h6 class="media-subheading">Front End Web developer at Deligram Technology Ltd.<br>A Rahimafrooj Affiliated Company.</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="media">
+                            <a class="media-left" href="#">
+                                <img class="media-object" src="w.jpg" alt="Generic placeholder image"/>
+                            </a>
+                            <div class="media-body">
+                                <p></p>
+                                   
+                                <h4 class="media-heading">Imran Khan</h4>
+      <h6 class="media-subheading">Student and Web Programmer.<br> Creator of  Nazirbd.org .</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    
+     <div class="container-fluid" id="my">
+        <h2>FAmily Of <br> Krishi Radio 98.8 FM </h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./kr1.JPG">
+                    <div class="overlay">
+                        <h3 class="project-title">Celebration of Birthday<br>MD Shamim Mridha </h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./si.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Krishi Radio<br>98.8 FM</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./of.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Winner of Upokuler kotha </h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./li.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Tour Of Tungipara,Gopalgong</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./jemi.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Celebration of birthday<br>S P Jemi</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./ui.jpeg">
+                    <div class="overlay">
+                        <h3 class="project-title">Voice Recording for Eid Magazine</h3>
+                    </div>
+                </div>
+
+                  <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./cu.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Good Moment with Cute Angel</h3>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./ar.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">winner of Upokuler Kotha</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <img src="./sa.jpg">
+                    <div class="overlay">
+                        <h3 class="project-title">Time Of<br> Gane Gane Adda</h3>
+                    </div>
+                </div>     
+                
+                
+        </div>
+    </div>
+    
+    
+    
+    
+
+    <div class="container-fluid" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 left">
+                    <span><svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+                        </svg><!-- <i class="fa fa-envelope" aria-hidden="true"></i> --></span>
+                </div>
+                <div class="col-lg-8 offset-lg-1">
+                    <h4>Let's get in touch</h4>
+                    <form id="form" autocomplete="off" method="post" action="https://s.codepen.io/Jules_Grenier/fullpage/vroBLv">
+                        <div class="firstname">
+                            <input id="firstname" type="text" name="firstname">
+                            <span class="focus-border"></span>
+                            <label class="label" for="firstname">Firstname *</label>
+                        </div>
+                        <div class="lastname">
+                            <input id="lastname" type="text" name="lastname">
+                            <span class="focus-border"></span>
+                            <label class="label" for="name">Lastname *</label>
+                        </div>
+                        <div class="email">
+                            <input id="email" type="email" name="email">
+                            <span class="focus-border"></span>
+                            <label class="label" for="email">Email *</label>
+                        </div>
+                        <div class="tel">
+                            <input id="phone" type="tel" name="phone">
+                            <span class="focus-border"></span>
+                            <label class="label" for="phone">Phone</label>
+                        </div>
+                        <div class="subject">
+                            <input id="subject" type="text" name="subject">
+                            <span class="focus-border"></span>
+                            <label class="label" for="subject">Subject *</label>
+                        </div>
+                        <div class="msg">
+                            <textarea id="message" name="message"></textarea>
+                            <span class="focus-border"></span>
+                            <label class="label" for="message">Message *</label>
+                        </div>
+                        <div class="input-info">* required field</div>
+                        <div class="btn-div">
+                            <button type="submit" class="button btn-send ">    
+
+                                <svg class="svg-inline--fa fa-paper-plane fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fa" data-icon="paper-plane" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"></path>
+                                </svg><!-- <i class="fa fa-paper-plane" aria-hidden="true"></i> -->
+                                Send
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h4>Location</h4>
+                <p>Amtali,Barguna</p>
+            </div>
+            <div>
+                <h4>Email</h4>
+                <p>mhhamim27@gmail.com</p>
+            </div>
+            <div>
+                <h4>Phone</h4>
+                <p>01799240031</p>
+            </div>
+            <div>
+                <h4>Social</h4>
+                <a href="https://www.linkedin.com/in/jules-grenier/" target="_blank">
+                    <svg class="svg-inline--fa fa-linkedin-in fa-w-14" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path fill="currentColor" d="M100.3 480H7.4V180.9h92.9V480zM53.8 140.1C24.1 140.1 0 115.5 0 85.8 0 56.1 24.1 32 53.8 32c29.7 0 53.8 24.1 53.8 53.8 0 29.7-24.1 54.3-53.8 54.3zM448 480h-92.7V334.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V480h-92.8V180.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V480z"></path>
+                    </svg><!-- <i class="fab fa-linkedin-in"></i> -->
+                </a>
+                <a href="https://twitter.com/JulesGrenier_" target="_blank">
+                    <svg class="svg-inline--fa fa-twitter fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                    </svg><!-- <i class="fab fa-twitter"></i> -->
+                </a>
+                <a href="https://github.com/JulesGrenier" target="_blank">
+                    <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                    </svg><!-- <i class="fab fa-github"></i> -->
+                </a>
+                <a href="https://codepen.io/Jules_Grenier/#" target="_blank">
+                    <svg class="svg-inline--fa fa-codepen fa-w-16" aria-hidden="true" data-fa-processed="" data-prefix="fab" data-icon="codepen" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path fill="currentColor" d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"></path>
+                    </svg><!-- <i class="fab fa-codepen"></i> -->
+                </a>
+            </div>
+           </div>
+    </footer>
+    <script src="./jquery-3.2.1.min.js.download"></script>
+    <script src="./popper.min.js.download"></script>
+    <script src="./bootstrap.min.js.download"></script>
+    <script defer="" src="./all.js.download"></script>
+
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="js/jquery-asPieProgress.min.js"></script>
+
+
+    <script src="./stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js.download"></script>
+    <script id="rendered-js">
+        $('#navigation a').on('click', function(e) {
+            e.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                },
+                1000);
+        });
+
+
+        $('.toggler, .nav-content a:not(#dropdown-link)').on('click', function() {
+            $('.toggler').toggleClass('change');
+            $('.nav-content').slideToggle();
+            $('#dropdown-menu').slideUp();
+            $('.menu-overlay').toggle();
+        });
+
+        $('.nav-content .dropdown').on('click', function() {
+            $('#dropdown-menu').slideToggle();
+        });
+
+        $('.menu-overlay').on('click', function() {
+            $('.toggler').removeClass('change');
+            $('.nav-content').slideUp();
+            $('#dropdown-menu').slideUp();
+            $('.menu-overlay').hide();
+        });
+
+        $("#contact input, #contact textarea").on('focusout', function() {
+
+            var text_val = $(this).val();
+            if (text_val === "") {
+                $(this).removeClass('has-value');
+            } else {
+                $(this).addClass('has-value');
+            }
+
+        });
+        //# sourceURL=pen.js
+
+    </script>
+
+
+    </body>
+
+</html>
